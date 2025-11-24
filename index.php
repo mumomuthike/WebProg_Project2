@@ -33,6 +33,7 @@ include 'header.php';
   <div class="hero_drs">
 
 
+
     <div class="door_crd">
       <div class="door_lbl">Past : SS Santa Maria (Wreck)</div>
       <div class="door_stat">
@@ -42,27 +43,27 @@ include 'header.php';
           } elseif ($_SESSION['past_map_solved']) {
               echo 'Status: <span class="status-partial">Map found, year unknown</span>';
           } else {
-              echo 'Status: <span class="status-locked">Lost beneath the waves</span>';
+              echo 'Status: <span class="status-locked">You are lost beneath the waves</span>';
           }
         ?>
       </div>
     </div>
 
-
+  
     <div class="door_crd">
       <div class="door_lbl">Present : Cruise Ship Deck</div>
       <div class="door_stat">
         <?php
           if ($_SESSION['present_solved']) {
-              echo 'Status: <span class="status-complete">Artifact harmonized</span>';
+              echo 'Status: <span class="status-complete">Space harmonized</span>';
           } else {
-              echo 'Status: <span class="status-locked">Surface-level ignorance</span>';
+              echo 'Status: <span class="status-locked">surface level, you maintain ignorance</span>';
           }
         ?>
       </div>
     </div>
 
-
+   
     <div class="door_crd">
       <div class="door_lbl">Future : Drowned Earth</div>
       <div class="door_stat">
@@ -70,11 +71,15 @@ include 'header.php';
           if ($_SESSION['future_paradox_solved']) {
               echo 'Status: <span class="status-complete">Paradox escaped</span>';
           } elseif ($_SESSION['future_beacon_solved']) {
-              echo 'Status: <span class="status-partial">Beacon deciphered</span>';
+              echo 'Status: <span class="status-partial">Totem Deciphered</span>';
           } else {
-              echo 'Status: <span class="status-locked">World lost to the deep</span>';
+              echo 'Status: <span class="status-locked">Planet Lost to the Deep</span>';
           }
         ?>
+      </div>
+    </div>
+
+  </div>
       </div>
     </div>
 
