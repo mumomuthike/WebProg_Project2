@@ -43,7 +43,7 @@ if ($script === 'future')  $dialClass = 'dia_fut';
 
  
   <header class="site_head">
-    <div class="title">ESCAPE CTHULHU: Time is not on your side</div>
+    <a href="index.php" class="title">ESCAPE CTHULHU: Time is not on your side</a>
     <div class="hud">
       <div class="score">Score: <strong><?php echo $_SESSION['score']; ?></strong></div>
       <div class="hints">Hints used: <?php echo $_SESSION['hints_used']; ?></div>
