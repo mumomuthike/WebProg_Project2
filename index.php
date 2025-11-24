@@ -11,12 +11,12 @@ include 'header.php';
 ?>
 <section class="hero">
 
-<!-- LEFT: CTHULHU IMAGE -->
+
 <div class="hero_art">
   <img src="cthulu.png" alt="Colossal Cthulhu rising from the ocean" class="hero_cthulhu" />
 </div>
 
-<!-- RIGHT: TEXT + DOORS -->
+
 <div class="hero_cont">
 
   <h1 class="hero_titl typewriter">
@@ -29,10 +29,10 @@ include 'header.php';
     Using your knowledge and timeliness, escape this puzzle before Cthulu takes over your mind.
   </p>
 
-  <!-- DOOR STATUS CARDS -->
+
   <div class="hero_drs">
 
-    <!-- PAST -->
+
     <div class="door_crd">
       <div class="door_lbl">Past : SS Santa Maria (Wreck)</div>
       <div class="door_stat">
@@ -48,7 +48,7 @@ include 'header.php';
       </div>
     </div>
 
-    <!-- PRESENT -->
+
     <div class="door_crd">
       <div class="door_lbl">Present : Cruise Ship Deck</div>
       <div class="door_stat">
@@ -62,7 +62,7 @@ include 'header.php';
       </div>
     </div>
 
-    <!-- FUTURE -->
+
     <div class="door_crd">
       <div class="door_lbl">Future : Drowned Earth</div>
       <div class="door_stat">
@@ -80,7 +80,6 @@ include 'header.php';
 
   </div>
 
-  <!-- BUTTONS -->
   <div class="hero_act">
     <a class="btn" href="past.php">Find the Past</a>
     <a class="btn" href="present.php">Walk to the Present</a>
