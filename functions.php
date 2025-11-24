@@ -1,5 +1,5 @@
 <?php
-// Start session safely
+// start
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -9,7 +9,7 @@ if (session_status() === PHP_SESSION_NONE) {
  */
 if (!isset($_SESSION['init'])) {
 
-    // Global Player State
+    // Player State
     $_SESSION['score']           = 100;
     $_SESSION['hints_used']      = 0;
 
@@ -17,22 +17,20 @@ if (!isset($_SESSION['init'])) {
     $_SESSION['past_map_solved']  = false;
     $_SESSION['past_year_solved'] = false;
 
-    // Year the Santa Maria was built (learned in Past)
+    // What year was Santa Built
     $_SESSION['ship_built_year']  = 1700;
 
-    // -------- PRESENT STATE --------
-    // Modern logic uses only this:
+    // 
     $_SESSION['present_solved']   = false;
 
-    // Word produced by the Present puzzle
-    // Initialized empty — present.php will set it to "key" or "nak"
+    // Key or NAK
     $_SESSION['water_riddle_answer'] = '';
 
-    // --------- FUTURE STATE ---------
+  
     $_SESSION['future_beacon_solved']  = false;
     $_SESSION['future_paradox_solved'] = false;
 
-    // Mark initialization complete
+    // Complete
     $_SESSION['init'] = true;
 }
 
