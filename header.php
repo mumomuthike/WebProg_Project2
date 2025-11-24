@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/functions.php';
 
-// Determine era class
+// Era
 $script = basename($_SERVER['SCRIPT_NAME'], '.php');
 
 $eraClass = 'era_hme';
@@ -9,13 +9,13 @@ if ($script === 'past')    $eraClass = 'era_past';
 if ($script === 'present') $eraClass = 'era_pres';
 if ($script === 'future')  $eraClass = 'era_fut';
 
-// Background class
+// background
 $bgClass = 'era_bg_index';
 if ($script === 'past')    $bgClass = 'era_bg_past';
 if ($script === 'present') $bgClass = 'era_bg_pre';
 if ($script === 'future')  $bgClass = 'era_bg_fut';
 
-// Time dial rotation
+// Time dail
 $dialClass = 'dia_chilling';
 if ($script === 'past')    $dialClass = 'dia_pas';
 if ($script === 'present') $dialClass = 'dia_pre';
@@ -32,16 +32,16 @@ if ($script === 'future')  $dialClass = 'dia_fut';
 
 <body class="<?php echo $eraClass; ?>">
 
-  <!-- background -->
+
   <div class="era_bg <?php echo $bgClass; ?>"></div>
   <div class="ocean-overlay"></div>
 
-  <!-- door anim -->
+ 
   <div class="page-door page-door-<?php echo $script; ?>">
     <div class="page-door-leaf"></div>
   </div>
 
-  <!-- header -->
+ 
   <header class="site_head">
     <div class="title">ESCAPE CTHULHU: Time is not on your side</div>
     <div class="hud">
@@ -54,7 +54,6 @@ if ($script === 'future')  $dialClass = 'dia_fut';
     </div>
   </header>
 
-  <!-- time nav -->
   <nav class="ti_nav">
     <div class="ti_dia <?php echo $dialClass; ?>">
       <span class="dia_look"></span>
