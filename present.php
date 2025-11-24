@@ -1,4 +1,3 @@
-
 <?php
 require_once 'functions.php';
 
@@ -47,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     header('Location: present.php');
     exit;
-}
+} 
 
 include 'header.php';
 ?>
@@ -92,4 +91,3 @@ include 'header.php';
 
 
 <?php include 'footer.php'; ?>
-
